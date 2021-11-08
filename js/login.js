@@ -115,7 +115,7 @@ clevertap.event.push("Product viewed", {
   "Price": 59.99,
   "Date": new Date()
 });
-  alert("event pushed for/n product: Casio Chronograph Watch /nCategory: Mens Accessories /nPrice: 59.99 /non date: "+new Date())
+  alert("event pushed for\n product: Casio Chronograph Watch \nCategory: Mens Accessories \nPrice: 59.99 \non date: "+new Date())
 }
 
 function askForPush(argument) {
