@@ -109,7 +109,7 @@ function pushProfile() {
 
 function raiseEvent(argument) {
   // event with properties
-clevertap.event.push("Product viewed", {
+clevertap.event.push("Added to cart", {
   "Product name": "Casio Chronograph Watch",
   "Category": "Mens Accessories",
   "Price": 59.99,
