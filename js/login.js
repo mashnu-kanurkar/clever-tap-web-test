@@ -120,10 +120,12 @@ clevertap.event.push("Added to cart", {
 
 function askForPush(argument) {
   clevertap.notifications.push({
- "titleText":'Would you like to receive Push Notifications?',
-  "bodyText":'We promise to only send you relevant content and give you updates on your transactions',
-  "okButtonText":'Sign me up!',
-  "rejectButtonText":'No thanks',
-  "askAgainTimeInSeconds":5,
-  "okButtonColor":'#f28046'});
+                titleText: "Would you like to receive Push Notifications?",
+                bodyText: "We promise to only send you relevant content and give you updates on your transactions",
+                okButtonText: "Sign me up!",
+                rejectButtonText: "No thanks",
+                okButtonColor: "#f23046",
+                skipDialog: false,
+                serviceWorkerPath: "/clever-tap-web-test/serviceworker.js",
+              });
 }
