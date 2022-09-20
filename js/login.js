@@ -126,6 +126,7 @@ function askForPush(argument) {
                 rejectButtonText: "No thanks",
                 okButtonColor: "#f23046",
                 skipDialog: false,
+                askAgainTimeInSeconds:5,
                 serviceWorkerPath: "/clever-tap-web-test/serviceworker.js",
               });
 }
