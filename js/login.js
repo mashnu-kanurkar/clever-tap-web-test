@@ -78,18 +78,11 @@ function validPhoneNumber(phoneNumber){
 }
 
 function login() {
-  var formData = validateForm();
-  console.log(formData)
-  if (formData == null) {
-    return
-  }
-
   clevertap.onUserLogin.push({
  "Site": {
-   "Name": formData["name"], 
-   "Email": formData["email"],
-   "Phone": formData["phoneNumber"],
-   "DOB": new Date(formData["birthDate"])   
+   "Name": "Mashnu", 
+   "Email": "mashnu@clevertap.com"
+   "Brand Name":"zomato"
  }
 });
 }
@@ -110,7 +103,6 @@ function pushProfile() {
 function raiseEvent(argument) {
   // event with properties
 clevertap.event.push("signIn", {
-  "Brand Name":"zomato"
 });
   alert("event pushed)
 }
