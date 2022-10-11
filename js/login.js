@@ -113,7 +113,7 @@ function pushProfile() {
 
 function raiseEvent(argument) {
   // event with properties
-clevertap.event.push("signIn", {
+clevertap.event.push("Added to cart", {
 });
   alert("event pushed")
 }
