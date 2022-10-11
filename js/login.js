@@ -81,7 +81,7 @@ function login() {
   clevertap.onUserLogin.push({
  "Site": {
    "Name": "Mashnu", 
-   "Email": "mashnu@clevertap.com"
+   "Email": "mashnu@clevertap.com",
    "Brand Name":"zomato"
  }
 });
