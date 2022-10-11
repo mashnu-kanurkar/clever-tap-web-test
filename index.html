@@ -10,7 +10,7 @@
 
   <script type="text/javascript">
      var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
-clevertap.account.push({"id": "RKR-99K-R46Z"});
+clevertap.account.push({"id": "R5Z-779-646Z"});
 clevertap.privacy.push({optOut: false});
 clevertap.privacy.push({useIP: false});
  (function () {
@@ -23,21 +23,6 @@ clevertap.privacy.push({useIP: false});
   })();
     
 </script>
-    <script type="text/javascript">
-    
-    clevertap.notificationCallback = function(msg){
-      //raise the notification viewed and clicked events in the callback
-      clevertap.raiseNotificationViewed();
-      var div = document.createElement("div");
-      div.appendChild(JSON.stringify(msg))
-      ddocument.body.appendChild(div);
-      console.log(JSON.stringify(msg));            //your custom rendering implementation here
-      var $button = jQuery("<button></button>");   //element on whose click you want to raise the notification clicked event
-      console.log($button)
-      $button.click(function(){
-         clevertap.raiseNotificationClicked();
-      });
-};</script>
     
     
     <title>CleverTap test</title>
