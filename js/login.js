@@ -104,7 +104,7 @@ function raiseEvent(argument) {
   // event with properties
 clevertap.event.push("signIn", {
 });
-  alert("event pushed)
+  alert("event pushed")
 }
 
 function askForPush(argument) {
