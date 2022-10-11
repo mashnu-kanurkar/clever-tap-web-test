@@ -22,6 +22,8 @@ clevertap.notificationCallback = function(msg){
       });
 };
 
+window.onload = clevertap.notificationCallback
+
 function validateForm() {
   console.log("validate form")
   var name = document.getElementById("name").value.trim();
