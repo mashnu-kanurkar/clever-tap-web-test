@@ -11,6 +11,17 @@ var askForPushBtn = document.getElementById("ask-for-push-btn");
 askForPushBtn.addEventListener("click", askForPush);
 
 
+clevertap.notificationCallback = function(msg){
+      //raise the notification viewed and clicked events in the callback
+      clevertap.raiseNotificationViewed();
+      console.log(JSON.stringify(msg));            //your custom rendering implementation here
+      var $button = jQuery("<button></button>");   //element on whose click you want to raise the notification clicked event
+      $button.click(function(){
+        console.log("clicked");
+         clevertap.raiseNotificationClicked();
+      });
+};
+
 function validateForm() {
   console.log("validate form")
   var name = document.getElementById("name").value.trim();
