@@ -10,6 +10,18 @@ raiseEventBtn.addEventListener("click", raiseEvent);
 var askForPushBtn = document.getElementById("ask-for-push-btn");
 askForPushBtn.addEventListener("click", askForPush);
 
+var optInButton = document.getElementById("opt-in-button");
+askForPushBtn.addEventListener("click", setOptIn);
+var optOutButton = document.getElementById("opt-out-button");
+askForPushBtn.addEventListener("click", setOptOut);
+
+function setOptIn(){
+  clevertap.privacy.push({optOut: false});
+}
+
+function setOptOut(){
+  clevertap.privacy.push({optOut: true});
+}
 function validateForm() {
   console.log("validate form")
   var name = document.getElementById("name").value.trim();
@@ -79,9 +91,10 @@ function validPhoneNumber(phoneNumber){
 function login() {
   clevertap.onUserLogin.push({
  "Site": {
-   "Name": "Mashnu", 
-   "Email": "mashnu@clevertap.com",
-   "Brand Name":"zomato"
+   "Name": formData["name"], 
+   "Email": formData["email"],
+   "Phone": formData["phoneNumber"]
+   "Brand Name":"Red water"
  }
 });
 }
@@ -101,8 +114,7 @@ function pushProfile() {
 
 function raiseEvent(argument) {
   // event with properties
-clevertap.event.push("Added to cart", {
-});
+clevertap.event.push("Added to cart", {});
 }
 
 function askForPush(argument) {
