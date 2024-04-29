@@ -93,7 +93,7 @@ function login() {
  "Site": {
    "Name": formData["name"], 
    "Email": formData["email"],
-   "Phone": formData["phoneNumber"]
+   "Phone": formData["phoneNumber"],
    "Brand Name":"Red water"
  }
 });
