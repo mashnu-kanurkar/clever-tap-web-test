@@ -1,6 +1,8 @@
-export let clevertap = {
-    sendPayload: function(payload) {
-        console.log("Sending payload:", payload);
-        // Your custom implementation
+export class clevertap{
+    constructor(){}
+    sendEventToCT(e,o){
+          console.log("event", e)
+  console.log("props", o)
+clevertap.event.push(e, o);
     }
-};
+}
