@@ -1,4 +1,4 @@
-import { sendEventToCT } from './clevertap.js';
+import { clevertap } from './clevertap.js';
 var loginBtn = document.getElementById("login-btn");
 loginBtn.addEventListener("click", login);
 
@@ -115,7 +115,7 @@ function pushProfile() {
 
 function raiseEvent(argument) {
   // event with properties
-  sendEventToCT("Added to cart", {"Product name":"Watch", "Price":2000})
+  clevertap.sendEventToCT("Added to cart", {"Product name":"Watch", "Price":2000})
 }
 
 function askForPush(argument) {
