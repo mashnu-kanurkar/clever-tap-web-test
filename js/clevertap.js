@@ -1,4 +1,4 @@
-function sendEventToCT(e, o) {
+export function sendEventToCT(e, o) {
   // event with properties
   console.log("event", e)
   console.log("props", o)
