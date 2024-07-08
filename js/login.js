@@ -1,4 +1,3 @@
-import { clevertap } from './clevertap.js';
 var loginBtn = document.getElementById("login-btn");
 loginBtn.addEventListener("click", login);
 
