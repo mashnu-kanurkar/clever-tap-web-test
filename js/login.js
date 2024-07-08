@@ -116,7 +116,7 @@ function pushProfile() {
 function raiseEvent() {
   // event with properties
   clevertap.event.push("Added to cart", {"Product name":"Watch", "Price":2000})
-  console.log("event fired: Added to cart {"Product name":"Watch", "Price":2000}")
+  console.log("event fired: Added to cart { Product name : Watch, Price:2000}")
 }
 
 function askForPush(argument) {
