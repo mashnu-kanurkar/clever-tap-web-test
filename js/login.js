@@ -116,6 +116,9 @@ function raiseEvent() {
   // event with properties
   clevertap.event.push("Added to cart", {"Product name":"Watch", "Price":2000})
   console.log("event fired: Added to cart { Product name : Watch, Price:2000}")
+  var elemDiv = document.createElement('div');
+  elemDiv.id = "mashnu_native_display_runtime";
+  document.body.appendChild(elemDiv);
 }
 
 function askForPush(argument) {
