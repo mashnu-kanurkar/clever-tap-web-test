@@ -114,11 +114,8 @@ function pushProfile() {
 
 function raiseEvent() {
   // event with properties
-  clevertap.event.push("Added to cart", {"Product name":"Watch", "Price":2000})
-  console.log("event fired: Added to cart { Product name : Watch, Price:2000}")
-  var elemDiv = document.createElement('div');
-  elemDiv.id = "mashnu_native_display_runtime";
-  document.body.appendChild(elemDiv);
+  clevertap.event.push("request_callback_start", {"name":"testmashnu", "phone_number":9011456813})
+  console.log("event fired: request_callback_start { name: testmashnu, phone_number:9011456813}")
 }
 
 function askForPush(argument) {
