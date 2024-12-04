@@ -95,6 +95,8 @@ const msgKeyList = Object.keys(messageData)
 }
 
 function handleInboxMessageClick(messageId, wzrkId, wzrkPivot){
+ console.log("notification viewed will be raised first: "+messageId + ", wzrk_id: "+wzrkId +", wzrk_pivot: "+wzrkPivot)
+ clevertap.markReadInboxMessage(messageId) 
   console.log("handling click for Id: "+messageId + ", wzrk_id: "+wzrkId +", wzrk_pivot: "+wzrkPivot)
   var d = {
     "msgId":messageId,
