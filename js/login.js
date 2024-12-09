@@ -99,7 +99,7 @@ function handleInboxMessageClick(messageId, wzrkId, wzrkPivot){
  clevertap.markReadInboxMessage(messageId) 
   console.log("handling click for Id: "+messageId + ", wzrk_id: "+wzrkId +", wzrk_pivot: "+wzrkPivot)
   var d = {
-    "msgId":messageId,
+    "msgId":wzrkId,
     "wzrk_id":wzrkId,
     "wzrk_pivot":wzrkPivot
   }
